@@ -1,9 +1,9 @@
 "use client";
 import React, { useRef } from "react";
+import { Roboto } from "next/font/google";
 
 interface BillComponentProps {
   orderId: string;
-  orderNumber: string;
   tableId: string;
   regionId: string;
   orderDate: string;
@@ -17,25 +17,25 @@ interface BillComponentProps {
   }[];
 }
 
+const roboto = Roboto({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
+});
+
 function formatThousand(number: number) {
   return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 const BillComponentLayout = ({
   orderId,
-  orderNumber,
   tableId,
   regionId,
   orderDate,
-  checkinTime,
-  checkoutTime,
-  guessCount,
   orderItems,
 }: BillComponentProps) => {
   const totalPrice = orderItems.reduce(
     (total, item) => item.price * item.quantity + total,
     0
   );
-  const tax = Math.round(totalPrice * 0.08);
   const billRef = useRef<HTMLDivElement>(null);
   const handlePrint = () => {
     const printContent = billRef.current;
@@ -53,7 +53,7 @@ const BillComponentLayout = ({
   };
 
   return (
-    <div>
+    <div data-id={orderId} className={roboto.className}>
       <div className="text-center mb-4 mt-10">
         <button
           onClick={handlePrint}
@@ -68,40 +68,22 @@ const BillComponentLayout = ({
       >
         {/* Header */}
         <div className="text-center mb-4">
-          <h1 className="text-xl font-bold">
-            Nhà Hàng Gumihogrill & Shabu - CS2
-          </h1>
-          <p>
-            304 Thái Hà, Đống Đa, Phường Trung Liệt, Quận Đống Đa, Hà Nội, Việt
-            Nam
-          </p>
+          <h1 className="text-xl font-bold">Nhà Hàng BANGKOK</h1>
+          <p>DT DC: 115 K1 Giảng Võ - Đống Đa - Hà Nội</p>
           <hr className="my-2" />
-          <p className="font-semibold">PHIẾU TẠM TÍNH</p>
-          <p className="font-bold">Số HD: {orderNumber}</p>
+          <p className="font-semibold">HÓA ĐƠN TẠM TÍNH</p>
         </div>
 
         {/* Bill details */}
         <div className="mb-4 grid grid-cols-2">
           <p>
-            <span className="font-bold">Mã HD:</span> #{orderId}
-          </p>
-          <p>
-            <span className="font-bold">Bàn:</span> {tableId} - {regionId}
+            <span className="font-bold">Số bàn:</span> {tableId} - {regionId}
           </p>
           <p>
             <span className="font-bold">Ngày:</span> {orderDate}
           </p>
           <p>
-            <span className="font-bold">Giờ vào:</span> {checkinTime}
-          </p>
-          <p>
-            <span className="font-bold">Giờ ra:</span> {checkoutTime}
-          </p>
-          <p>
-            <span className="font-bold">Số khách:</span> {guessCount}
-          </p>
-          <p>
-            <span className="font-bold">TN:</span> Quản lý
+            <span className="font-bold">Thu Ngân:</span> Huyền
           </p>
         </div>
 
@@ -112,8 +94,8 @@ const BillComponentLayout = ({
               <th className="py-2">STT</th>
               <th>Tên món</th>
               <th>SL</th>
-              <th>Đơn giá</th>
-              <th>Thành tiền</th>
+              <th>Đ. Giá</th>
+              <th>T. Tiền</th>
             </tr>
           </thead>
           <tbody>
@@ -133,19 +115,13 @@ const BillComponentLayout = ({
         {/* Total */}
         <div className="mt-4 text-right">
           <p className="font-bold">Thành tiền: {formatThousand(totalPrice)}</p>
-          <p className="font-bold">
-            Tiền thuế (VAT 8%): {formatThousand(tax)} đ
-          </p>
-          <p className="font-bold text-lg">
-            Tổng tiền thanh toán: {formatThousand(totalPrice + tax)} đ
-          </p>
         </div>
 
         {/* Footer */}
         <div className="text-center mt-6 text-sm text-gray-600">
-          <p>Hóa đơn nhà hàng chỉ xuất trong ngày.</p>
-          <p>Cảm ơn Quý Khách</p>
-          <p>Powered by IPOS.vn</p>
+          <p>
+            <i>Cảm ơn quý khách hẹn gặp lại.</i>
+          </p>
         </div>
       </div>
     </div>

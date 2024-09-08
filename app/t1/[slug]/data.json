@@ -1,6 +1,7 @@
 [
   {
     "orderId": "EMSJ",
+    "orderNumber": "610016",
     "tableId": "A7",
     "regionId": "Khu A",
     "orderDate": "30/08/2024",
@@ -37,6 +38,7 @@
   },
   {
     "orderId": "EMSK",
+    "orderNumber": "610017",
     "tableId": "A8",
     "regionId": "Khu A",
     "orderDate": "30/08/2024",
@@ -73,6 +75,7 @@
   },
   {
     "orderId": "EMSL",
+    "orderNumber": "610018",
     "tableId": "A9",
     "regionId": "Khu A",
     "orderDate": "30/08/2024",

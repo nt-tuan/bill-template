@@ -1,0 +1,68 @@
+[
+  {
+    "orderId": "t2-1",
+    "orderNumber": "610016",
+    "tableId": "A7",
+    "regionId": "Khu A",
+    "orderDate": "26/08/2024",
+    "checkinTime": "18:02",
+    "checkoutTime": "19:59",
+    "guessCount": 2,
+    "orderItems": [
+      {
+        "name": "Bò lẩu (lớn)",
+        "quantity": 2,
+        "price": 399000
+      },
+      {
+        "name": "Trà sữa thái xanh",
+        "quantity": 4,
+        "price": 38000
+      }
+    ]
+  },
+  {
+    "orderId": "t2-2",
+    "orderNumber": "610017",
+    "tableId": "A7",
+    "regionId": "Khu A",
+    "orderDate": "26/08/2024",
+    "checkinTime": "18:02",
+    "checkoutTime": "19:59",
+    "guessCount": 2,
+    "orderItems": [
+      {
+        "name": "Bò lẩu (lớn)",
+        "quantity": 2,
+        "price": 399000
+      },
+      {
+        "name": "Trà chanh thái",
+        "quantity": 4,
+        "price": 30000
+      }
+    ]
+  },
+  {
+    "orderId": "t2-3",
+    "orderNumber": "610018",
+    "tableId": "A7",
+    "regionId": "Khu A",
+    "orderDate": "26/08/2024",
+    "checkinTime": "18:02",
+    "checkoutTime": "19:59",
+    "guessCount": 2,
+    "orderItems": [
+      {
+        "name": "Bò lẩu (lớn)",
+        "quantity": 2,
+        "price": 399000
+      },
+      {
+        "name": "Lemon grass",
+        "quantity": 4,
+        "price": 30000
+      }
+    ]
+  }
+]
