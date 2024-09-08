@@ -1,0 +1,110 @@
+[
+  {
+    "orderId": "EMSJ",
+    "tableId": "A7",
+    "regionId": "Khu A",
+    "orderDate": "31/08/2024",
+    "checkinTime": "18:02",
+    "checkoutTime": "19:59",
+    "guessCount": 2,
+    "orderItems": [
+      {
+        "name": "Tổng hợp 299k",
+        "quantity": 2,
+        "price": 199000
+      },
+      {
+        "name": "Buffet 199k",
+        "quantity": 1,
+        "price": 199000
+      },
+      {
+        "name": "Coca",
+        "quantity": 2,
+        "price": 22000
+      },
+      {
+        "name": "Ba Chỉ Bò EX 120 (6M)",
+        "quantity": 0,
+        "price": 0
+      },
+      {
+        "name": "Thịt Ướp Gumiho 150 (1M)",
+        "quantity": 0,
+        "price": 0
+      }
+    ]
+  },
+  {
+    "orderId": "EMSK",
+    "tableId": "A8",
+    "regionId": "Khu A",
+    "orderDate": "31/08/2024",
+    "checkinTime": "18:02",
+    "checkoutTime": "20:00",
+    "guessCount": 2,
+    "orderItems": [
+      {
+        "name": "Tổng hợp 299k",
+        "quantity": 2,
+        "price": 299000
+      },
+      {
+        "name": "Buffet 199k",
+        "quantity": 1,
+        "price": 199000
+      },
+      {
+        "name": "Soda Quýt",
+        "quantity": 2,
+        "price": 39000
+      },
+      {
+        "name": "Ba Chỉ Bò EX 120 (6M)",
+        "quantity": 0,
+        "price": 0
+      },
+      {
+        "name": "Thịt Ướp Gumiho 150 (1M)",
+        "quantity": 0,
+        "price": 0
+      }
+    ]
+  },
+  {
+    "orderId": "EMSL",
+    "tableId": "A9",
+    "regionId": "Khu A",
+    "orderDate": "31/08/2024",
+    "checkinTime": "18:02",
+    "checkoutTime": "20:03",
+    "guessCount": 2,
+    "orderItems": [
+      {
+        "name": "Tổng hợp 299k",
+        "quantity": 2,
+        "price": 299000
+      },
+      {
+        "name": "Buffet 199k",
+        "quantity": 1,
+        "price": 199000
+      },
+      {
+        "name": "Soda Quýt",
+        "quantity": 2,
+        "price": 39000
+      },
+      {
+        "name": "Ba Chỉ Bò EX 120 (6M)",
+        "quantity": 0,
+        "price": 0
+      },
+      {
+        "name": "Thịt Ướp Gumiho 150 (1M)",
+        "quantity": 0,
+        "price": 0
+      }
+    ]
+  }
+]
