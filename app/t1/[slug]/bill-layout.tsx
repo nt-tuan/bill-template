@@ -62,10 +62,7 @@ const BillComponentLayout = ({
           Print Bill
         </button>
       </div>
-      <div
-        ref={billRef}
-        className="max-w-md mx-auto mt-10 bg-white shadow-md p-6 rounded-lg"
-      >
+      <div ref={billRef} className="max-w-md mx-auto mt-10 bg-white p-6">
         {/* Header */}
         <div className="text-center mb-4">
           <h1 className="text-xl font-bold">
