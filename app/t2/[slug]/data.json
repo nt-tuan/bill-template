@@ -10,9 +10,14 @@
     "guessCount": 2,
     "orderItems": [
       {
-        "name": "Bò lẩu (lớn)",
+        "name": "Bò lẩu (mixed)",
         "quantity": 2,
-        "price": 399000
+        "price": 200000
+      },
+      {
+        "name": "Xôi xoài",
+        "quantity": 4,
+        "price": 45000
       },
       {
         "name": "Trà sữa thái xanh",
@@ -32,9 +37,14 @@
     "guessCount": 2,
     "orderItems": [
       {
-        "name": "Bò lẩu (lớn)",
+        "name": "Bò lẩu (mixed)",
         "quantity": 2,
-        "price": 399000
+        "price": 200000
+      },
+      {
+        "name": "Xôi xoài",
+        "quantity": 4,
+        "price": 45000
       },
       {
         "name": "Trà chanh thái",
@@ -54,9 +64,14 @@
     "guessCount": 2,
     "orderItems": [
       {
-        "name": "Bò lẩu (lớn)",
+        "name": "Bò lẩu (mixed)",
         "quantity": 2,
-        "price": 399000
+        "price": 200000
+      },
+      {
+        "name": "Xôi xoài",
+        "quantity": 4,
+        "price": 45000
       },
       {
         "name": "Lemon grass",
